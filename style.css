@@ -1,0 +1,159 @@
+#view {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+#tab-btn{
+  width: 70px;
+    height: 35px;
+    background: #131313;
+    border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: smaller;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-indent: 4px;
+    border: white double 3px;
+  transition: bottom 1s;
+}
+#pst-stats-container {
+  position: absolute;
+  display: flex;
+  bottom: -100px;
+    right: 6px;
+    transition: bottom 1s;
+}
+.pst-background {
+  height: 50px;
+  width: 50px;
+  background: mediumaquamarine;
+  margin: 2px;
+  font-family: "Afacad Flux", sans-serif;
+  color: white;
+      border: double white;
+
+}
+.pst-stat {
+  text-align: center;
+  font-size: 11px;
+  padding-top: 5px;
+}
+.pst-symbol {
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+.pst-title {
+  text-align: center;
+  font-size: 9px;
+}
+#identifiers {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+#truestats {
+  position: absolute;
+    top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tst-container {
+  width: 400px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.tst-bar-container {
+  height: 10%;
+  width: 100%;
+  background: #83838317;
+  align-self: center;
+      display: flex;
+    justify-content: center;
+}
+
+.tst-bar {
+  background: tomato;
+  width: 90%;
+  font-size: 10px;
+  color: white;
+  text-indent: 4px;
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+  transition: width 0.4s;
+}
+
+.HUD{
+  display: none !important;
+}
+
+.tst-label {
+  height: 100%;
+  display: block;
+  width: 80px;
+  color: nla;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+  text-anchor: middle;
+  font-weight: 100;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.stats {
+  position: absolute;
+  left: 10px;
+  bottom: -120px;
+  font-weight: 100;
+  padding: 10px;
+  border-bottom: solid black 4px;
+  font-family: "Afacad Flux", sans-serif;
+  transition: bottom 1s;
+}
+
+#leaderboard {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  display: none; /* Initially hidden */
+}
+
+#leaderboard h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#leaderboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboardli {
+  padding: 10px;
+  list-style: inside lower-roman;
+}
