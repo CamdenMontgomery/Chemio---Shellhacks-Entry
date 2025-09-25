@@ -175,6 +175,9 @@ app.get('/script.js', function(req, res) {
   res.sendFile(__dirname + "/" + "script.js");
 });
 
+app.get('/src/*', function(req, res) {
+  res.sendFile(__dirname + "/" + req.url);
+});
 const listener = server.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + process.env.PORT);
 })
